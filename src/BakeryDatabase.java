@@ -83,7 +83,19 @@ public class BakeryDatabase {
                     }
                 }
             }
-                    return result;
-    }
+            return result;
+        }
+
+        public void display(ArrayList<BakeryItem> bakeryItems, String restriction){
+            System.out.print("Item with " + restriction+ " restriction are: ");
+            if (bakeryItems.size() > 0) {
+                for (BakeryItem item : bakeryItems){
+                    System.out.print("\n" + item);
+                }
+            } else {
+                System.out.print("None");
+            }
+
+        }
 
 }

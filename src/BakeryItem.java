@@ -19,6 +19,7 @@ public class BakeryItem {
         return restriction;
     }
     public String toString(){
-        return "name " +this.name +" "+ "price" + this.price+  " " + "Exp Date"+ " "+ this.expDate+ " "+ "In Stock" + " " +this.quantityInStock + "Restriction " + " " + this.restriction;
+        return this.name +"\n\t|\n\t ---> Price: " + this.price+  ", Exp Date: \""+ this.expDate+
+                "\", In Stock: " + this.quantityInStock + ", Restriction: " + this.restriction;
     }
 }
